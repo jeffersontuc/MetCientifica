@@ -1,0 +1,11 @@
+====== Instruções =====
+
+- Para rodar o simulador execute o arquivo run.sh existente dentro dessa pasta.
+
+- Os dados são gravados no arquivo log_result.txt existente dentro dessa pasta.
+
+- Você também pode alterar os valores de cpu e memória das máquinas físicas, basta abrir o arquivo run.sh com algum editor
+de texto e alterar a segunda coluna (de trás para frente) de uma linha.
+
+- Os valores usados para simular uma requisição foram tirados de um trace da google. 
+Link para o trace: https://github.com/google/cluster-data
