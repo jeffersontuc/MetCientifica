@@ -1,5 +1,7 @@
 #coding: utf-8
 
+import sys
+
 orders = [
 ['best-fit', 0.20, 0.02], 
 ['best-fit', 0.55, 0.02], 
@@ -66,6 +68,12 @@ def bestFit(blocs, process):
 
 def main():
 	toFile = ""
+	order = sys.argv
+	order = [order[1], float(order[2]), float(order[3])]
+	if(len(order)):
+		orders = [order]
+
+	print orders
 	for order in range(len(orders)):
 		process = []
 		blocs = []
@@ -151,7 +159,7 @@ def main():
 			toFile += "=================================================================================" + "\n"
 			toFile += "\n"
 
-	arquivo = open("log_result.txt", "w")
+	arquivo = open("log_result.txt", "a")
 	arquivo.writelines(toFile.strip())
 	arquivo.close()
 
