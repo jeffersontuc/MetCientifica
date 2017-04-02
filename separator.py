@@ -19,7 +19,7 @@ def separar_dados():
     tasks_1 = []
     tasks_4 = []
     
-    #remove("log_result.txt")
+    remove("log_result.txt")
 
 
     for i in range(1, len(linhas)):
